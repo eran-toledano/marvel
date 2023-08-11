@@ -1,0 +1,179 @@
+html{
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+   
+}
+
+
+body{ margin: 0%;
+}
+
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    border: 1px black solid;
+    grid-template-rows: 25% 32.5% 32.5% 10%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer"
+    ;
+}
+
+.header{
+display: flex;
+grid-area:header ;
+background: rgb(0, 37, 92);
+flex-direction: row;
+justify-content: space-between;
+}
+
+.header:hover{
+    background: rgb(0, 76, 190);
+    
+}
+.pages{
+font-family: Arial, Helvetica, sans-serif;
+color: antiquewhite;
+  margin: 2%;
+  
+}
+.pages:hover{
+    font-size: larger;
+    text-shadow: 1px 1px 1px rgb(54, 53, 53);
+}
+.navbar{
+    width: 50vw;
+    height: auto;
+    height: auto;
+}
+
+.flower-logo{
+    position: absolute;
+    width: 15vw;
+    height: 20vh;
+    transform: rotate(180deg)
+
+    
+}
+.div-flower-logo{
+    width: 15vw;
+    height: 20vh;
+}
+
+ .continents{
+width:20vw;
+height: 7vh;
+list-style:  square;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+ 
+
+.footer{
+    grid-area:footer ;
+    background: rgb(0, 37, 92);
+    border: 3px black solid;
+
+}
+
+.footer:hover{
+    background: rgb(0, 76, 190);
+
+
+}
+
+.sidebar{ 
+    grid-area:sidebar ;
+    height: 64.6vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: rgb(60, 247, 107);
+    border: 3px black solid;
+}
+.main{
+    grid-area:main ;
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style:  square;
+
+}
+
+.list-flowers{
+    position: relative;
+    width: 10vw;
+    height:14vh;
+    justify-content: space-between;
+    list-style:  square;
+
+}
+
+.main-flower-img{
+    width: 10vw;
+    height: 10vh;
+}
+
+#Daisy{
+    position: absolute;
+    justify-content: start;
+    margin-right: 50vw;
+    margin-top: 11%;
+}
+#Lily{
+    position: absolute;
+    margin-bottom: 4%;
+    align-self: flex-end;
+    margin-right: 50vw;
+
+}
+@media screen and (max-width: 600px){
+    .container{
+        display: grid;
+        grid-template-rows: 25% 32.5% 32.5% 10%;
+        grid-template-columns:  25% 25% 25% 25%;
+        grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer"
+
+        ;}
+        .sidebar{
+            display: none;
+        }
+        
+        .main{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .list-flowers{
+            width: 20%;
+            height: 20%;
+            font-size: smaller;
+        }
+        
+        .main-flower-img{ 
+            width: 50%;
+            height: 40%;
+
+        }
+        #Rose{
+            justify-self: flex-start;
+            align-self: self-start;
+
+        }
+        #Sunflower{
+            align-self: flex-start;
+            justify-self: left;
+
+        }
