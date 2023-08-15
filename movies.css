@@ -63,6 +63,7 @@ font-size: 3vw;
     width: 100%;
     height: 100%;
     display: flex;
+    overflow-y: scroll;
     flex-wrap: wrap;
     grid-area: main;
     background-color: rgb(255, 255, 255);
@@ -75,18 +76,21 @@ font-size: 3vw;
     width: 20vw;
     height: 50vh;
     margin-top: 5%;
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
 
     
  }
 
- .footer{
+ .footer {
+    grid-area: footer;
     display: flex;
     justify-content: start;
     align-items: center;
-    grid-area: footer;
+    position: relative;
+    flex-wrap: wrap;
+    bottom: 0;
+    width: 100%;
     background-color: rgb(255, 0, 0);
-
  }
  .linkedin_logo{
     width: 6vw;
